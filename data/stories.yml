@@ -62,3 +62,13 @@ stories:
   - intent: nlu_fallback
   - action: hello_n
   - action: action_hello_world
+
+- story: interactive_story_1
+  steps:
+  - intent: nh
+  - action: action_hello_world
+
+- story: interactive_story_1
+  steps:
+  - intent: hello_world
+  - action: action_hello_world

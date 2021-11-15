@@ -92,3 +92,6 @@ nlu:
   examples: |
     - hello
     - how
+- intent: nh
+  examples: |
+    - Nova mensagem
