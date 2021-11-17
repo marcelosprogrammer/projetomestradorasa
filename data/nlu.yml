@@ -1,5 +1,56 @@
 version: "2.0"
 nlu:
+- intent: proteger
+  examples: |
+    - amparar
+    - acudir
+    - guardar
+    - ajudar
+    - defender
+    - auxiliar
+    - resguardar
+    - salvo
+    - curado
+    - curar
+    - salvar
+    - estarei protegido
+    - protegido
+    - proteção
+    - A vacina protege 100% contra o virus
+    - A vacina proteger totalmente contra o virus?
+    - Ao me vacinar estarei completamente imune ao coronavirus?
+- intent: vacina
+  examples: |
+    - vacinas
+    - imunizante
+    - vacina coronavac
+    - vacina sputnik
+    - vacina astrazeneca
+    - vacina pfizer
+    - defender
+    - preservar
+    - proteger
+    - imunidade
+    - A vacina para a covid-19 é segura?
+    - imune
+    - protegido
+    - eficácia
+    - resultado
+- intent: covid
+  examples: |
+    - virus
+    - vírus
+    - covid-19
+    - Covid
+    - Covid-19
+    - coronavírus
+    - sars-cov-2
+    - sars-cov
+    - carga viral
+    - cov
+    - O que é o vírus corona?
+    - Quando o sars-cov foi descoberto?
+    - O novo covid-19 é de que familia de vírus?
 - intent: greet
   examples: |
     - hey
@@ -15,11 +66,11 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - good
 - intent: hello_world
   examples: |
     - hello
     - world
-    - covid
 - intent: goodbye
   examples: |
     - good afternoon

@@ -3,11 +3,14 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- proteger
+- vacina
+- covid
+- greet
 - hello_world
 - nh
 - nlu_fallback
 - stop
-- greet
 - goodbye
 - affirm
 - deny
@@ -17,6 +20,8 @@ intents:
 responses:
   utter_greet:
   - text: Hey! How are you?
+  - text: And you?
+  - text: Fine and you
   utter_cheer_up:
   - image: https://i.imgur.com/nGF1K8f.jpg
     text: 'Here is something to cheer you up:'
@@ -26,9 +31,28 @@ responses:
   - text: Great, carry on!
   utter_goodbye:
   - text: Bye
+  - text: See you Tomorrow
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: Eu sou um chat bot desenvolvido com Framework Rasa.
+  - text: Sou um chat bot e ainda não possuo resposta a sua pergunta.
+  - text: Bem vindo sou o chatbot SUSI, converso sobre Vacinas para a Covid-19.
+  utter_covid:
+  - text: A Covid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada transmissibilidade e de distribuição global.
+  - text: O SARS-CoV-2 é um betacoronavírusPertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.
+  utter_vacina:
+  - text: As vacinas licenciadas é semelhante a outras vacinas conhecidas e amplamente utilizadas.
+  - text: Como todas as vacinas, as vacinas COVID-19 passam por um rigoroso processo de teste em várias etapas, incluindo grandes ensaios clínicos que envolvem dezenas de milhares de pessoas. Esses ensaios são especificamente projetados para identificar quaisquer preocupações de segurança.
+  - text: As vacinas COVID-19 foram testadas em grandes e randomizados ensaios controlados que incluem pessoas de uma ampla faixa etária, ambos os sexos, etnias diferentes e aqueles com condições médicas conhecidas.
+  - text: Dados sobre segurança das vacinas contra covid mostram baixa taxa de efeitos adversos graves.
+  - text: Segundo especialistas consultados pela CNN, o desenvolvimento da imunidade é influenciado por diversos fatores e pode variar de uma pessoa para outra.
+  utter_proteger:
+  - text: Os resultados apontam que sete dias após a 2ª dose da vacina da Pfizer houve proteção de 95% a 100% contra a Covid-19. Depois de seis meses, a proteção se manteve em 100% em um grupo de pessoas, mas chegou a reduzir para 86% em outras, principalmente na América Latina, incluindo Brasil e Argentina.
+  - text: Segundo publicação da Agência Brasil, O estudo britânico ZOE Covid apontou que, no caso da vacina Pfizer/BioNTech, a eficácia um mês após a segunda dose, que é de 88%, cai para 74% passados cinco ou seis meses. Para o imunizante da AstraZeneca, a eficácia caiu de 77%, um mês depois, para 67% após quatro ou cinco meses.
+  - text: o pesquisador Tim Spector, autor de um estudo que apontou que a proteção oferecida pela vacina da Pfizer, por exemplo, cai de 88% um mês após a segunda dose para 74% após seis meses.A vacina Oxford/AstraZeneca, por sua vez, cai de 77% para 67% após o quinto mês depois da imunização completa.
 actions:
 - action_hello_world
 - hello_n
+- utter_covid
 - utter_greet
+- utter_proteger
+- utter_vacina
