@@ -3,6 +3,7 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- transmitir
 - normalidade
 - periodicidade
 - variante
@@ -11,7 +12,7 @@ intents:
 - vacina
 - covid
 - evento
-- transmitir
+- planejamento
 - greet
 - hello_world
 - nh
@@ -93,6 +94,11 @@ responses:
   - text: Um estudo americano revelou que a transmissão do novo coronavírus (Sars-CoV-2) por pessoas vacinadas acontece por menos tempo do que por quem ainda não foi imunizado.
   - text: Estudos recentes mostram que quando pessoas vacinadas contraem a Covid, elas eliminam o vírus mais rapidamente e transmitem muito menos do que os não imunizados.
   - text: Em um estudo da FAPESP, conclui-se que vacinados podem contrair e transmitir a covid-19, sendo que até o momento a gravidade é menor.
+  utter_planejamento:
+  - text: Os primeiros a serem vacinados serão os trabalhadores da área de saúde - profissionais de saúde, como médicos, enfermeiros, técnicos de enfermagem e também profissionais de apoio, como cozinheiros e pessoal da limpeza de hospital, motoristas de ambulância, cuidadores de idosos etc.
+  - text: Trabalhadores da saúde e Indígenas aldeados em terras demarcadas, pessoas com 60 anos ou mais institucionalizadas e pessoas de 75 anos ou mais também devem receber a vacina nessa primeira fase.
+  - text: Na ordem ficam trabalhadores da saúde, Indígenas em terras demarcadas, pessoas com mais de 60 anos, pessoas com comorbidade, entre elas estão - diabetes mellitus, hipertensão arterial grave, doença pulmonar obstrutiva crônica, doença renal, doenças cardiovasculares e cerebrovasculares, indivíduos transplantados de órgão sólido, anemia falciforme, câncer, obesidade grau III. Nessa fase também serão vacinadas pessoas com deficiência permanente severa.
+
 actions:
 - action_hello_world
 - utter_covid
@@ -102,6 +108,7 @@ actions:
 - utter_periodicidade
 - utter_proteger
 - utter_risco
+- utter_transmitir
 - utter_vacina
 - utter_variante
-- utter_transmitir
+- utter_planejamento

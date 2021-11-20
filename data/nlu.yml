@@ -20,7 +20,6 @@ nlu:
     - A vacina protege 100% contra o virus
     - A vacina proteger totalmente contra o virus?
     - Ao me vacinar estarei completamente imune ao coronavirus?
-
 - intent: transmitir
   examples: |
     - transmissão
@@ -31,7 +30,9 @@ nlu:
     - suspeita
     - isolamento
     - assintomatico
-
+    - vacinados podem transmitir o virus
+    - O virus pode ser transmitido por quem ja se vacinou?
+    - mesmo vacinado ainda transmito o virus?
 - intent: normalidade
   examples: |
     - vida normal
@@ -117,6 +118,13 @@ nlu:
     - reação
     - efeitos
     - colaterais
+- intent: planejamento
+  examples: |
+    - plano
+    - cronograma de vacinação
+    - plano nacional de vacinação
+    - planos
+    - aplicação
 - intent: greet
   examples: |
     - hey

@@ -78,3 +78,9 @@ stories:
   steps:
   - intent: transmitir
   - action: utter_transmitir
+
+- story: planejamento path
+  steps:
+    - intent: planejamento
+    - action: utter_planejamento
+
