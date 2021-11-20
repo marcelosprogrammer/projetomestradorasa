@@ -3,6 +3,8 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- variante
+- risco
 - proteger
 - vacina
 - covid
@@ -17,6 +19,8 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
+entities:
+- utter_risco
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -40,7 +44,7 @@ responses:
   - text: A Covid-19 é uma infecção respiratória aguda causada pelo coronavírus SARS-CoV-2, potencialmente grave, de elevada transmissibilidade e de distribuição global.
   - text: O SARS-CoV-2 é um betacoronavírusPertence ao subgênero Sarbecovírus da família Coronaviridae e é o sétimo coronavírus conhecido a infectar seres humanos.
   utter_vacina:
-  - text: As vacinas licenciadas é semelhante a outras vacinas conhecidas e amplamente utilizadas.
+  - text: As vacinas licenciadas são semelhantes a outras vacinas conhecidas e amplamente utilizadas.
   - text: Como todas as vacinas, as vacinas COVID-19 passam por um rigoroso processo de teste em várias etapas, incluindo grandes ensaios clínicos que envolvem dezenas de milhares de pessoas. Esses ensaios são especificamente projetados para identificar quaisquer preocupações de segurança.
   - text: As vacinas COVID-19 foram testadas em grandes e randomizados ensaios controlados que incluem pessoas de uma ampla faixa etária, ambos os sexos, etnias diferentes e aqueles com condições médicas conhecidas.
   - text: Dados sobre segurança das vacinas contra covid mostram baixa taxa de efeitos adversos graves.
@@ -49,10 +53,27 @@ responses:
   - text: Os resultados apontam que sete dias após a 2ª dose da vacina da Pfizer houve proteção de 95% a 100% contra a Covid-19. Depois de seis meses, a proteção se manteve em 100% em um grupo de pessoas, mas chegou a reduzir para 86% em outras, principalmente na América Latina, incluindo Brasil e Argentina.
   - text: Segundo publicação da Agência Brasil, O estudo britânico ZOE Covid apontou que, no caso da vacina Pfizer/BioNTech, a eficácia um mês após a segunda dose, que é de 88%, cai para 74% passados cinco ou seis meses. Para o imunizante da AstraZeneca, a eficácia caiu de 77%, um mês depois, para 67% após quatro ou cinco meses.
   - text: o pesquisador Tim Spector, autor de um estudo que apontou que a proteção oferecida pela vacina da Pfizer, por exemplo, cai de 88% um mês após a segunda dose para 74% após seis meses.A vacina Oxford/AstraZeneca, por sua vez, cai de 77% para 67% após o quinto mês depois da imunização completa.
+  utter_risco:
+  - text: De uma maneira geral, a vacinação apresenta poucos riscos à saúde de uma pessoa. Evidentemente, existem casos em que pessoas têm reações adversas à determinada vacina.
+  - text: Se há o conhecimento prévio – ou suspeita – de algum fenômeno alérgico aos componentes de uma vacina, o indivíduo deve procurar um médico antes de se imunizar para evitar qualquer tipo de risco à sua saúde.
+  - text: É normal ter certas reações após uma vacinação, tais como vermelhidão, inchaço ou dor ao redor do local da injeção. Fadiga, febre, dor de cabeça e dores nos membros também não são incomuns nos primeiros três dias após a vacinação.
+  - text: De modo geral, as vacinas aprovadas são seguras de acordo com a agência de medicamentos EMA, da União Europeia, a FDA, do governo americano, e a Organização Mundial da Saúde (OMS).
+  - text: Mesmo com a possibilidade de apresentar alguma reação, os riscos são bem menores do que contrair a doença, seja a covid-19 ou qualquer outra para a qual já exista vacina.
+  utter_variante:
+  - text: As vacinas Ad26.COV 2.5, da Janssen, e Comirnaty, da Pfizer, mantêm sua proteção, em especial para casos severos e moderados de Covid-19 causada pela variante Beta.
+  - text: Estudos mostram redução importante na ação de anticorpos neutralizantes com apenas uma dose das vacinas de Pfizer e AstraZeneca. Com duas doses, porém, a proteção se mantém contra a variável Delta.
+  - text: Uma pesquisa realizada com 105 profissionais de saúde no Japão indica que aproximadamente 90% das pessoas que receberam duas doses da vacina da Pfizer apresentaram anticorpos considerados eficazes contra sete variantes do coronavírus.
+  - text: A Fiocruz publicou um estudo que indica que os anticorpos induzidos pela vacina de Oxford se mostraram mais eficazes contra a cepa B.1.1.7 (Reino Unido) e a cepa P.1 (Brasil) e menos eficaz contra a cepa B.1.351 (África do Sul).
+  - text: Uma pesquisa da Universidade de Brasília (UnB) apontou que a CoronaVac é eficaz contra a variante P.1 (Brasil). Além da P.1, recentemente, a Sinovac divulgou dados que mostram que o imunizante é eficaz contra as cepas P.2 e N.9, ambas também associadas ao Brasil.
+  - text: A vacina da jansen apresentou eficácia de 72% nos Estados Unidos, 66% em países da América Latina e 57% na África do Sul. Essas diferenças podem ser consequência do predomínio das variantes P.1 (Brasil) e 1.351 (África do Sul) identificadas nas regiões, mas são necessárias mais pesquisas.
+  - text: Nenhuma das mutações detectadas até o momento altera o vírus que provoca a Covid-19 de forma que comprometa a eficácia da vacina.
+  - text: Um estudo recente publicado na revista Nature concluiu que a  vacinação com as duas doses da Biontech-Pfizer continua a proteger fortemente contra a variante delta.
+  - text: Até agora, as vacinas existentes têm sido muito eficazes contra todas as mutações mais preocupantes do coronavírus. Quando a eficácia delas diminuir, é claro, elas precisarão ser ajustadas.
 actions:
 - action_hello_world
-- hello_n
 - utter_covid
 - utter_greet
 - utter_proteger
+- utter_risco
 - utter_vacina
+- utter_variante

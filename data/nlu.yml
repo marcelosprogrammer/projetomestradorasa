@@ -9,6 +9,7 @@ nlu:
     - defender
     - auxiliar
     - resguardar
+    - imunizar
     - salvo
     - curado
     - curar
@@ -36,6 +37,22 @@ nlu:
     - protegido
     - eficácia
     - resultado
+    - sofro riscos com  a vacina
+- intent: variante
+  examples: |
+    - variantes
+    - tipo
+    - tipos
+    - variante alfa
+    - variante beta
+    - variante gama
+    - mutações
+    - mutação
+    - modificação
+    - a vacina pode me imunizar de todas as mutações do coronavirus?
+    - A vacina pode me imunizar de todas as mutações do coronavirus?
+    - A vacina pode me proteger de todas as mutações do coronavirus?
+    - a vacina  pode me imunizar de todas as mutações do coronavirus?
 - intent: covid
   examples: |
     - virus
@@ -51,6 +68,15 @@ nlu:
     - O que é o vírus corona?
     - Quando o sars-cov foi descoberto?
     - O novo covid-19 é de que familia de vírus?
+- intent: risco
+  examples: |
+    - perigo
+    - ameaça
+    - falhas
+    - riscos
+    - a vacina pode por minha saúde em risco?
+    - a vacina da covid pode pôr minha saúde em risco?
+    - a vacina pode pôr minha saúde em risco?
 - intent: greet
   examples: |
     - hey

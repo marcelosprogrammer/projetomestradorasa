@@ -48,7 +48,13 @@ stories:
   steps:
   - intent: proteger
   - action: utter_proteger
-- story: interactive_story_1
+
+- story: risco path
   steps:
-  - intent: proteger
-  - action: utter_proteger
+  - intent: risco
+  - action: utter_risco
+
+- story: variante path
+  steps:
+  - intent: variante
+  - action: utter_variante
