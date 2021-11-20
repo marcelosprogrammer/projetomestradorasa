@@ -3,13 +3,15 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- normalidade
+- periodicidade
 - variante
 - risco
 - proteger
 - vacina
 - covid
 - evento
-- periodicidade
+- transmitir
 - greet
 - hello_world
 - nh
@@ -78,14 +80,28 @@ responses:
   utter_periodicidade:
   - text: Não se conhece por quanto tempo a vacina da COVID-19 confere imunidade, por isso não é possível afirmar se a vacinação precisará ser feita de forma periódica. No entanto, caso se verifique que a proteção é pouco duradoura, é possível que seja necessário realizar a vacinação periódica, principalmente dos grupos de maior risco.
   - text: Até o momento, temos a aplicação de uma segunda dose para so adultos não idosos e de uma terceira dose, de reforço para grupos de idosos.
-
+  utter_normalidade:
+  - text: Profissionais da saúde e autoridades têm destacado, como medida preventiva à propagação da Covid-19, causada pelo novo coronavírus, a relevância de que os brasileiros evitem aglomerações e o contato próximo com outras pessoas.
+  - text: Para reduzir as chances de transmissão pelo contato com secreções, a orientação é não permanecer perto de um grande número de pessoas. A medida vale para cidadãos de qualquer faixa etária – assim, neste momento, também representa uma decisão importante evitar locais como clubes, piscinas, praias, bares e casas noturnas.
+  - text: Evite aglomerações e o contato próximo com outras pessoas, além da higiene ao lavar as mãos com água e sabão”, salienta a diretora do Laboratório de Virologia do Instituto Butantan, Viviane Botosso.
+  - text: Evite aglomerações - É de suma importância se conscientizar de que o vírus só consegue se propagar, como vem acontecendo, a partir do momento em que pessoas contaminadas continuam circulando, se aglomerando.
+  - text: Vacine-se, está sendo adotado o passaporte de vacinação, este permitirá a entrada e participação em festas, mas mantenha os cuidados necessários, mesmo vacinado.
+  - text: Tomar a vacina não libera as pessoas para as festas, quando todos estiverem vacinados as atividades pré-pandemia devem voltar ao normal, segundo Heloisa bonfá, Diretora do Hospital das Clinicas de são Paulo.
+  utter_transmitir:
+  - text: Qualquer pessoa infectada pode transmitir covid, as evidências disponíveis atualmente sugerem que o vírus se espalha principalmente entre pessoas que estão em contato próximo umas com as outras, normalmente dentro de 1 metro (curto alcance). Uma pessoa pode ser infectada quando aerossóis ou gotículas contendo o vírus são inalados ou entram em contato direto com os olhos, nariz ou boca.
+  - text: Pessoas que receberam duas doses de vacina contra covid-19 ainda podem transmitir o vírus em ambientes domésticos, de acordo com um estudo publicado no The Lancet Infectious Diseases.
+  - text: Um estudo americano revelou que a transmissão do novo coronavírus (Sars-CoV-2) por pessoas vacinadas acontece por menos tempo do que por quem ainda não foi imunizado.
+  - text: Estudos recentes mostram que quando pessoas vacinadas contraem a Covid, elas eliminam o vírus mais rapidamente e transmitem muito menos do que os não imunizados.
+  - text: Em um estudo da FAPESP, conclui-se que vacinados podem contrair e transmitir a covid-19, sendo que até o momento a gravidade é menor.
 actions:
 - action_hello_world
 - utter_covid
+- utter_evento
 - utter_greet
+- utter_normalidade
+- utter_periodicidade
 - utter_proteger
 - utter_risco
 - utter_vacina
 - utter_variante
-- utter_evento
-- utter_periodicidade
+- utter_transmitir

@@ -20,6 +20,27 @@ nlu:
     - A vacina protege 100% contra o virus
     - A vacina proteger totalmente contra o virus?
     - Ao me vacinar estarei completamente imune ao coronavirus?
+
+- intent: transmitir
+  examples: |
+    - transmissão
+    - contaminar
+    - contaminação
+    - proliferação
+    - incubação
+    - suspeita
+    - isolamento
+    - assintomatico
+
+- intent: normalidade
+  examples: |
+    - vida normal
+    - aglomerações
+    - festas
+    - comemorações
+    - ajuntamento
+    - ao me vacinar estou protegido em aglomerações?
+    - vacinados podem participar de festas com seguranã?
 - intent: vacina
   examples: |
     - vacinas
@@ -85,6 +106,8 @@ nlu:
     - de forma periódica
     - continua
     - tempos em tempos
+    - será necessário tomar a vacina todos os anos, como a da gripe?
+    - precisarei me vacinar de novo no futuro?
 - intent: evento
   examples: |
     - adversidade
@@ -186,4 +209,3 @@ nlu:
   examples: |
     - hello
     - how
-

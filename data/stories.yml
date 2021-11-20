@@ -68,3 +68,13 @@ stories:
   steps:
   - intent: periodicidade
   - action: utter_periodicidade
+
+- story:  normalidade path
+  steps:
+  - intent:  normalidade
+  - action: utter_normalidade
+
+- story:  transmitir path
+  steps:
+  - intent: transmitir
+  - action: utter_transmitir
