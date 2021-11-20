@@ -125,6 +125,21 @@ nlu:
     - plano nacional de vacinação
     - planos
     - aplicação
+    - priorizados
+    - tomar
+    - receber
+    - recebimento
+    - primeiros imunizados
+    - segundo
+    - fase
+    - terceiro
+    - quarto
+    - grupo
+    - quais pessoas devem se vacinar
+    - grupo de vacinados
+    - precisa
+    - quem precisa
+    - quem necessita tomar
 - intent: greet
   examples: |
     - hey

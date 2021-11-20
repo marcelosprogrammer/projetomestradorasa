@@ -98,7 +98,7 @@ responses:
   - text: Os primeiros a serem vacinados serão os trabalhadores da área de saúde - profissionais de saúde, como médicos, enfermeiros, técnicos de enfermagem e também profissionais de apoio, como cozinheiros e pessoal da limpeza de hospital, motoristas de ambulância, cuidadores de idosos etc.
   - text: Trabalhadores da saúde e Indígenas aldeados em terras demarcadas, pessoas com 60 anos ou mais institucionalizadas e pessoas de 75 anos ou mais também devem receber a vacina nessa primeira fase.
   - text: Na ordem ficam trabalhadores da saúde, Indígenas em terras demarcadas, pessoas com mais de 60 anos, pessoas com comorbidade, entre elas estão - diabetes mellitus, hipertensão arterial grave, doença pulmonar obstrutiva crônica, doença renal, doenças cardiovasculares e cerebrovasculares, indivíduos transplantados de órgão sólido, anemia falciforme, câncer, obesidade grau III. Nessa fase também serão vacinadas pessoas com deficiência permanente severa.
-
+  - text: Mesmo quem já pegou covid-19 e possui anticorpos deve se vacinar.
 actions:
 - action_hello_world
 - utter_covid
