@@ -8,6 +8,8 @@ intents:
 - proteger
 - vacina
 - covid
+- evento
+- periodicidade
 - greet
 - hello_world
 - nh
@@ -69,6 +71,14 @@ responses:
   - text: Nenhuma das mutações detectadas até o momento altera o vírus que provoca a Covid-19 de forma que comprometa a eficácia da vacina.
   - text: Um estudo recente publicado na revista Nature concluiu que a  vacinação com as duas doses da Biontech-Pfizer continua a proteger fortemente contra a variante delta.
   - text: Até agora, as vacinas existentes têm sido muito eficazes contra todas as mutações mais preocupantes do coronavírus. Quando a eficácia delas diminuir, é claro, elas precisarão ser ajustadas.
+  utter_evento:
+  - text: Algumas das vacinas podem apresentar - dor no local da aplicação; edema; eritema; inchaço, enduração e prurido.
+  - text: De forma sistêmica algumas das vacinas podem apresentar - fadiga, febre, calafrios, mialgia, diarreia, náusea, cefaléia, artralgia, rinorreia, odinofagia, congestão nasal e perda de apetite.
+  - text: Dores de cabeça ou musculares são os relatos mais comuns; nenhum óbito foi relacionado à vacina até o momento.
+  utter_periodicidade:
+  - text: Não se conhece por quanto tempo a vacina da COVID-19 confere imunidade, por isso não é possível afirmar se a vacinação precisará ser feita de forma periódica. No entanto, caso se verifique que a proteção é pouco duradoura, é possível que seja necessário realizar a vacinação periódica, principalmente dos grupos de maior risco.
+  - text: Até o momento, temos a aplicação de uma segunda dose para so adultos não idosos e de uma terceira dose, de reforço para grupos de idosos.
+
 actions:
 - action_hello_world
 - utter_covid
@@ -77,3 +87,5 @@ actions:
 - utter_risco
 - utter_vacina
 - utter_variante
+- utter_evento
+- utter_periodicidade

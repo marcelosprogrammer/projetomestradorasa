@@ -77,6 +77,23 @@ nlu:
     - a vacina pode por minha saúde em risco?
     - a vacina da covid pode pôr minha saúde em risco?
     - a vacina pode pôr minha saúde em risco?
+- intent: periodicidade
+  examples: |
+    - uma vez por ano
+    - a cada seis meses
+    - a cada 6 meses
+    - de forma periódica
+    - continua
+    - tempos em tempos
+- intent: evento
+  examples: |
+    - adversidade
+    - adverso
+    - contrário
+    - reações
+    - reação
+    - efeitos
+    - colaterais
 - intent: greet
   examples: |
     - hey
@@ -169,6 +186,4 @@ nlu:
   examples: |
     - hello
     - how
-- intent: nh
-  examples: |
-    - Nova mensagem
+

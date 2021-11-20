@@ -58,3 +58,13 @@ stories:
   steps:
   - intent: variante
   - action: utter_variante
+
+- story:  evento path
+  steps:
+  - intent: evento
+  - action: utter_evento
+
+- story: periodicidade path
+  steps:
+  - intent: periodicidade
+  - action: utter_periodicidade
