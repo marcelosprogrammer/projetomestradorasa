@@ -19,20 +19,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: mood_unhappy
-  - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: affirm
   - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
 
 - story: covid path
   steps:
@@ -84,3 +73,27 @@ stories:
     - intent: planejamento
     - action: utter_planejamento
 
+- story: idade path
+  steps:
+    - intent: idade
+    - action: utter_idade
+
+- story:  resfriado path
+  steps:
+    - intent: resfriado
+    - action: utter_resfriado
+
+- story: testesvacina path
+  steps:
+    - intent: testesvacina
+    - action: utter_testesvacina
+
+- story:  consumo_comida path
+  steps:
+    - intent: consumo_comida
+    - action: utter_consumo_comida
+
+- story:  consumo_bebida path
+  steps:
+    - intent: consumo_bebida
+    - action: utter_consumo_bebida

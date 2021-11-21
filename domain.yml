@@ -13,6 +13,11 @@ intents:
 - covid
 - evento
 - planejamento
+- idade
+- resfriado
+- testesvacina
+- consumo_bebida
+- consumo_comida
 - greet
 - hello_world
 - nh
@@ -31,16 +36,13 @@ responses:
   - text: Hey! How are you?
   - text: And you?
   - text: Fine and you
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
   utter_did_that_help:
   - text: Did that help you?
   utter_happy:
   - text: Great, carry on!
   utter_goodbye:
-  - text: Bye
-  - text: See you Tomorrow
+  - text: Obrigado por conversar comigo!
+  - text: Nos vemos em outro momento, até mais!
   utter_iamabot:
   - text: Eu sou um chat bot desenvolvido com Framework Rasa.
   - text: Sou um chat bot e ainda não possuo resposta a sua pergunta.
@@ -99,6 +101,24 @@ responses:
   - text: Trabalhadores da saúde e Indígenas aldeados em terras demarcadas, pessoas com 60 anos ou mais institucionalizadas e pessoas de 75 anos ou mais também devem receber a vacina nessa primeira fase.
   - text: Na ordem ficam trabalhadores da saúde, Indígenas em terras demarcadas, pessoas com mais de 60 anos, pessoas com comorbidade, entre elas estão - diabetes mellitus, hipertensão arterial grave, doença pulmonar obstrutiva crônica, doença renal, doenças cardiovasculares e cerebrovasculares, indivíduos transplantados de órgão sólido, anemia falciforme, câncer, obesidade grau III. Nessa fase também serão vacinadas pessoas com deficiência permanente severa.
   - text: Mesmo quem já pegou covid-19 e possui anticorpos deve se vacinar.
+  utter_resfriado:
+  - text: A recomendação do Ministério da Saúde é a de que a vacinação contra o novo coronavírus seja adiada caso a pessoa apresente sintomas gripais ou quadros febris. Para que a imunização seja feita, é importante que o quadro de saúde esteja normalizado.
+  - text: Segundo Doctolaria, Não é recomendável receber a vacina durante sintomas gripais. Em primeiro lugar, a suposta "gripe" pode ser a própria COVID-19 e, ainda que não seja a COVID-19, ser vacinada na vigência de uma infecção não é prudente, uma vez que o organismo está tentando combater a infecção e não deve ser ainda mais estimulado para produzir anticorpos da vacina.
+  utter_idade:
+  - text: Nenhuma vacina tem autorização para ser aplicada em crianças no Brasil; a Pfizer pode ser usada em adolescente com mais de 12 anos.
+  - text: Até o momento, a Anvisa (Agência Nacional de Vigilância Sanitária) não autorizou a aplicação de nenhuma vacina contra a covid-19 em crianças.
+  - text: a Universidade de Oxford chegou a anunciar um estudo sobre o uso da vacina na faixa etária entre 6 e 17 anos, mas suspendeu as pesquisas depois que problemas envolvendo coágulos sanguíneos raros foram notificados em adultos vacinados com o imunizante.
+  utter_testesvacina:
+  - text: Após contrair o covid, o tempo recomendado, segundo especialistas, é esperar um mês para tomar a primeira ou a segunda dose, após o primeiro dia de sintoma ou se o exame RT-PCR der positivo.
+  - text: O Ministério da Saúde recomenda o adiamento da vacinação "diante de doenças agudas febris moderadas ou graves", até a resolução do quadro.
+  utter_consumo_bebida:
+  - text: O consumo moderado de bebidas alcoólicas não interfere na resposta gerada por nenhuma vacina e não aumenta o risco de eventos adversos pós-vacinais. Por outro lado, a ingestão excessiva ou o uso crônico e abusivo podem enfraquecer o organismo como um todo, incluindo o sistema imunológico, o que facilita infecções.
+  - text: O álcool pode "retardar" a velocidade da resposta contra infecções por até 24 horas após sua ingestão, e isso resulta em maiores chances de complicações e dificuldade na recuperação em caso de adoecimento.
+  - text: Não existe evidência mostrando que o álcool antes ou após a imunização possa interferir na sua resposta final", diz. "O mesmo não se pode dizer dos usos crônico ou exagerado, que afetam não só os sistemas orgânicos como atrapalham a resposta imunológica.
+  - text: Agência Nacional de Vigilância Sanitária (Anvisa) já se posicionou sobre o tema e disse que não há estudos que mostrem algum impacto do consumo de álcool na vacinação.4
+  - text: Diretamente ao covid, os estudos ainda não são conclusivos, mas com base em outros estudos sobre o sistema imunologico, com alcoól, o cerebro é afetado e as funções mentais também. Falta de coordenação motora são comuns, há uma baixa nas funções essenciais, também há menos atividade para formação de anticorpos protetores necessários.
+  utter_consumo_comida:
+  - text: Não há restrição alimentar antes ou após utilizar a vacina contra Covid-19. Alimentar-se bem ajuda o sistema imunológico com nutrientes.
 actions:
 - action_hello_world
 - utter_covid
@@ -112,3 +132,8 @@ actions:
 - utter_vacina
 - utter_variante
 - utter_planejamento
+- utter_idade
+- utter_resfriado
+- utter_testesvacina
+- utter_consumo_comida
+- utter_consumo_bebida

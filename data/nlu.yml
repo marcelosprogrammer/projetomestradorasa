@@ -140,6 +140,57 @@ nlu:
     - precisa
     - quem precisa
     - quem necessita tomar
+- intent: idade
+  examples: |
+    - crianças
+    - adulto
+    - vacina em crianças e adultos
+    - adolescentes
+    - crianças tomando vacina
+    - 0 a 12 anos
+    - mais de 60 anos
+    - 3 a 17 anos
+    - menor que 18 anos
+    - jovens
+    - idosos
+- intent: resfriado
+  examples: |
+    - resfriado
+    - gripe
+    - gripado
+    - sintomas da gripe
+    - contispação
+    - influenza
+    - defluxo
+    - sintomas de gripe e covid
+    - tomar a vacina com sintomas de gripe
+- intent: testesvacina
+  examples: |
+    - testes e vacina
+    - teste positivo
+    - teste negativo
+    - positivo
+    - negativo
+    - pegar covid e aplicar vacina
+- intent: consumo_comida
+  examples: |
+    - comida
+    - alimento
+    - comer
+    - posso comer
+    - devo comida
+- intent: consumo_bebida
+  examples: |
+    - bebida
+    - refrigerante
+    - agua
+    - suco
+    - liquido
+    - cerveja
+    - alcool
+    - cachaça
+    - vinho
+    - wisky
 - intent: greet
   examples: |
     - hey
