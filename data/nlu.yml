@@ -13,6 +13,7 @@ nlu:
     - salvo
     - curado
     - curar
+    - salvaguardar
     - salvar
     - estarei protegido
     - protegido
@@ -20,6 +21,7 @@ nlu:
     - A vacina protege 100% contra o virus
     - A vacina proteger totalmente contra o virus?
     - Ao me vacinar estarei completamente imune ao coronavirus?
+    - A vacina para a covid-19 é segura
 - intent: transmitir
   examples: |
     - transmissão
@@ -52,7 +54,8 @@ nlu:
     - vacina pfizer
     - defender
     - preservar
-    - proteger
+    - segurança
+    - segura
     - imunidade
     - A vacina para a covid-19 é segura?
     - imune
@@ -60,6 +63,11 @@ nlu:
     - eficácia
     - resultado
     - sofro riscos com  a vacina
+    - A vacina contra a covid-19 é segura?
+    - a vacina contra covid-19 é segura
+    - a vacina contra a covid-19 é segura?
+    - A vacina contra a covid é confiável?
+    - a vacina contra a covid é confiável
 - intent: variante
   examples: |
     - variantes
@@ -191,6 +199,12 @@ nlu:
     - cachaça
     - vinho
     - wisky
+- intent: omicron
+  examples: |
+    - Ômicron
+    - micron
+    - omicron
+    - ômicron
 - intent: greet
   examples: |
     - hey

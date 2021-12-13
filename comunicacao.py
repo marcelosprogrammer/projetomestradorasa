@@ -63,13 +63,14 @@ class Comunicacao:
         tam = len(footIds)
         if footIds[tam-1] == ",":
             footIds = footIds[:-1]
-        #sql_execucao2 = "select * from dados_chatbot where id in ("+footIds+")"
-        sql_execucao2 = "select * from dados_chatbot where id in (1,7,15)"
-        print(sql_execucao2)
+        sql_execucao2 = "select * from dados_chatbot where id in ("+footIds+")"
+        #sql_execucao2 = "select * from dados_chatbot where id in (57)"
+        #print(sql_execucao2)
         cursor.execute(sql_execucao2)
         resultado2 = cursor.fetchall()
         texto = ""
         for x in resultado2:
+            #print(x)
             resumo = x[4]
             texto = texto + resumo
         cursor.close()
@@ -88,6 +89,6 @@ class Comunicacao:
             for palavra in word_tokenize(sentenca.lower()):
                 if palavra in frequencia:
                     sentencas_importantes[i] += frequencia[palavra]
-        idx_sentencas_importantes = nlargest(10, sentencas_importantes, sentencas_importantes.get)
+        idx_sentencas_importantes = nlargest(5, sentencas_importantes, sentencas_importantes.get)
         for i in sorted(idx_sentencas_importantes):
             print("Sentencasss "+sentencas[i])

@@ -3,13 +3,13 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- proteger
+- vacina
+- risco
 - transmitir
 - normalidade
 - periodicidade
 - variante
-- risco
-- proteger
-- vacina
 - covid
 - evento
 - planejamento
@@ -18,6 +18,7 @@ intents:
 - testesvacina
 - consumo_bebida
 - consumo_comida
+- omicron
 - greet
 - hello_world
 - nh
@@ -56,6 +57,7 @@ responses:
   - text: As vacinas COVID-19 foram testadas em grandes e randomizados ensaios controlados que incluem pessoas de uma ampla faixa etária, ambos os sexos, etnias diferentes e aqueles com condições médicas conhecidas.
   - text: Dados sobre segurança das vacinas contra covid mostram baixa taxa de efeitos adversos graves.
   - text: Segundo especialistas consultados pela CNN, o desenvolvimento da imunidade é influenciado por diversos fatores e pode variar de uma pessoa para outra.
+  - text: No geral, as vacinas que vêm sendo aprovadas ao redor do mundo apresentaram bom perfil de segurança. A maioria dos registros é de casos leves a moderados, que se resolvem em poucos dias.
   utter_proteger:
   - text: Os resultados apontam que sete dias após a 2ª dose da vacina da Pfizer houve proteção de 95% a 100% contra a Covid-19. Depois de seis meses, a proteção se manteve em 100% em um grupo de pessoas, mas chegou a reduzir para 86% em outras, principalmente na América Latina, incluindo Brasil e Argentina.
   - text: Segundo publicação da Agência Brasil, O estudo britânico ZOE Covid apontou que, no caso da vacina Pfizer/BioNTech, a eficácia um mês após a segunda dose, que é de 88%, cai para 74% passados cinco ou seis meses. Para o imunizante da AstraZeneca, a eficácia caiu de 77%, um mês depois, para 67% após quatro ou cinco meses.
@@ -121,19 +123,19 @@ responses:
   - text: Não há restrição alimentar antes ou após utilizar a vacina contra Covid-19. Alimentar-se bem ajuda o sistema imunológico com nutrientes.
 actions:
 - action_hello_world
+- utter_consumo_bebida
+- utter_consumo_comida
 - utter_covid
 - utter_evento
 - utter_greet
+- utter_idade
 - utter_normalidade
 - utter_periodicidade
+- utter_planejamento
 - utter_proteger
+- utter_resfriado
 - utter_risco
+- utter_testesvacina
 - utter_transmitir
 - utter_vacina
 - utter_variante
-- utter_planejamento
-- utter_idade
-- utter_resfriado
-- utter_testesvacina
-- utter_consumo_comida
-- utter_consumo_bebida

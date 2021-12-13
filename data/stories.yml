@@ -97,3 +97,8 @@ stories:
   steps:
     - intent: consumo_bebida
     - action: utter_consumo_bebida
+
+- story:  omicron path
+  steps:
+    - intent: omicron
+    - action: action_hello_world
